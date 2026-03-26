@@ -49,7 +49,7 @@ function App() {
       </div>
 
       <div className="mt-[-20px] mb-2 animate-fade-in-up delay-100">
-        <h1 className="font-cursive font-bold text-4xl md:text-5xl text-brand-pink tracking-wide drop-shadow-sm">
+        <h1 className="font-cursive font-bold text-[2.2rem] md:text-5xl text-brand-pink tracking-wide drop-shadow-sm">
           Mi Baby Shower
         </h1>
       </div>
@@ -65,7 +65,7 @@ function App() {
 
       <div className="flex items-center justify-center gap-1 mb-2 animate-fade-in-up delay-300">
         <h2 className="font-cursive font-bold text-[3.25rem] md:text-7xl text-brand-pink drop-shadow-sm leading-tight">
-          Ailany Jasira
+          Ailany Kaelis
         </h2>
       </div>
 
@@ -78,7 +78,7 @@ function App() {
           <span className="text-3xl md:text-4xl font-bold text-white tracking-wide">
             {timeLeft.dias}
           </span>
-          <span className="text-[11px] md:text-xs text-white uppercase font-medium mt-0.5 tracking-wider">
+          <span className="text-[12px] md:text-[13px] text-white font-medium mt-0.5 tracking-wider capitalize">
             Días
           </span>
         </div>
@@ -86,7 +86,7 @@ function App() {
           <span className="text-3xl md:text-4xl font-bold text-white tracking-wide">
             {timeLeft.horas}
           </span>
-          <span className="text-[11px] md:text-xs text-white uppercase font-medium mt-0.5 tracking-wider">
+          <span className="text-[12px] md:text-[13px] text-white font-medium mt-0.5 tracking-wider capitalize">
             Hr
           </span>
         </div>
@@ -94,7 +94,7 @@ function App() {
           <span className="text-3xl md:text-4xl font-bold text-white tracking-wide">
             {timeLeft.minutos}
           </span>
-          <span className="text-[11px] md:text-xs text-white uppercase font-medium mt-0.5 tracking-wider">
+          <span className="text-[12px] md:text-[13px] text-white font-medium mt-0.5 tracking-wider capitalize">
             Min
           </span>
         </div>
@@ -102,7 +102,7 @@ function App() {
           <span className="text-3xl md:text-4xl font-bold text-white tracking-wide">
             {timeLeft.segundos}
           </span>
-          <span className="text-[11px] md:text-xs text-white uppercase font-medium mt-0.5 tracking-wider">
+          <span className="text-[12px] md:text-[13px] text-white font-medium mt-0.5 tracking-wider capitalize">
             Seg
           </span>
         </div>
