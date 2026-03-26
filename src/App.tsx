@@ -49,7 +49,7 @@ function App() {
       </div>
 
       <div className="mt-[-20px] mb-2 animate-fade-in-up delay-100">
-        <h1 className="font-cursive font-bold text-5xl md:text-6xl text-brand-pink tracking-wide drop-shadow-sm">
+        <h1 className="font-cursive font-bold text-4xl md:text-5xl text-brand-pink tracking-wide drop-shadow-sm">
           Mi Baby Shower
         </h1>
       </div>
@@ -65,7 +65,7 @@ function App() {
 
       <div className="flex items-center justify-center gap-1 mb-2 animate-fade-in-up delay-300">
         <h2 className="font-cursive font-bold text-[3.25rem] md:text-7xl text-brand-pink drop-shadow-sm leading-tight">
-          Luna Alejandra
+          Ailany Jasira
         </h2>
       </div>
 
