@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #eb779d;
+  --color-brand-light: #fdf2f8;
+  --color-brand-box: #ef98b6;
+  --font-cursive: "Dancing Script", cursive;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fdf2f8;
+  background-image: 
+    radial-gradient(at 10% 20%, hsla(330,100%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(330,100%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(330,100%,92%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 100%, hsla(330,100%,88%,1) 0px, transparent 50%);
+  background-attachment: fixed;
+  margin: 0;
+}
