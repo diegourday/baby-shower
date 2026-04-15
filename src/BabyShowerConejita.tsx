@@ -46,7 +46,7 @@ export default function BabyShowerConejita() {
     <div className="flex flex-col items-center justify-center min-h-[100vh] w-full p-4 text-center overflow-hidden font-sans">
       <div className="relative w-80 h-80 md:w-116 md:h-116 flex-shrink-0 animate-fade-in-up">
         <img
-          src="/conejita.png"
+          src="/conejita/main.png"
           alt="Conejita"
           className="w-full h-full object-contain"
         />

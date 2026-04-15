@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import BabyShowerConejita from "./BabyShowerConejita";
 import BabyShowerPanda from "./BabyShowerPanda";
+import PrimerAnitoMoana from "./PrimerAnitoMoana";
 
 function Home() {
   useEffect(() => {
@@ -28,6 +29,13 @@ function Home() {
         >
           Invitación de Panda
         </Link>
+
+        <Link
+          to="/primer-anito-moana"
+          className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold py-3 px-6 rounded-xl shadow-sm transition-colors duration-300"
+        >
+          Primer Añito Moana
+        </Link>
       </div>
     </div>
   );
@@ -40,6 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/baby-shower-conejita" element={<BabyShowerConejita />} />
         <Route path="/baby-shower-panda" element={<BabyShowerPanda />} />
+        <Route path="/primer-anito-moana" element={<PrimerAnitoMoana />} />
       </Routes>
     </BrowserRouter>
   );
