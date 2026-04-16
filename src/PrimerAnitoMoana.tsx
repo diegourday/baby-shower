@@ -84,13 +84,13 @@ export default function PrimerAnitoMoana() {
             </h1>
           </div>
 
-          <div className="relative flex items-center justify-center w-64 md:w-[380px] lg:w-[450px] h-24 md:h-40 lg:h-48 mx-auto mb-6 mt-0 animate-fade-in-up delay-300 lg:mt-4 order-2 lg:order-3">
+          <div className="relative flex items-center justify-center w-72 md:w-[380px] lg:w-[450px] h-28 md:h-40 lg:h-48 mx-auto mb-6 mt-0 animate-fade-in-up delay-300 lg:mt-4 order-2 lg:order-3">
             <img
               src="/moana/madera.svg"
               alt="Cartel madera"
               className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0"
             />
-            <h2 className="relative z-10 font-oleo font-normal text-[2.8rem] md:text-6xl lg:text-7xl text-[#fff8e7] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] leading-tight text-center">
+            <h2 className="relative z-10 font-oleo font-normal text-[2.4rem] md:text-6xl lg:text-7xl text-[#fff8e7] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] leading-tight text-center">
               Maily
             </h2>
           </div>
