@@ -43,12 +43,10 @@ export default function PrimerAnitoMoana() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[100vh] w-full overflow-hidden font-sans bg-white">
-      <div
-        className="absolute inset-0 bg-cover bg-bottom bg-fixed bg-no-repeat"
-        style={{ backgroundImage: "url('/moana/bg.svg')" }}
-      />
-
+    <div
+      className="relative flex flex-col items-center justify-center min-h-[100vh] w-full overflow-x-hidden font-sans bg-white bg-cover bg-bottom bg-no-repeat"
+      style={{ backgroundImage: "url('/moana/bg.svg')" }}
+    >
       {/* Decoración Izquierda */}
       <img
         src="/moana/izq.svg"
