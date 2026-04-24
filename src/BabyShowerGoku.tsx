@@ -44,7 +44,7 @@ export default function BabyShowerGoku() {
 
   return (
     <div className="relative flex min-h-[100vh] w-full overflow-hidden bg-[#eef8ff] font-sans">
-      <div className="absolute inset-0 bg-[url('/goku/bg-goku.jpg')] bg-[length:100%_100%] bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-[url('/goku/bg.png')] bg-cover bg-right md:bg-center md:bg-[length:100%_100%] bg-no-repeat opacity-80" />
       <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-sky-200/30 blur-3xl" />
       <div className="absolute -right-24 bottom-8 h-72 w-72 rounded-full bg-white/45 blur-3xl" />
 
@@ -63,7 +63,7 @@ export default function BabyShowerGoku() {
             />
           </div>
           <img
-            src="/goku/main-goku.png"
+            src="/goku/main.png"
             alt="Goku"
             className="relative z-10 w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.22)]"
           />
@@ -71,25 +71,28 @@ export default function BabyShowerGoku() {
 
         <div className="flex flex-col items-center justify-center w-full lg:w-auto">
           <div className="mb-2 animate-fade-in-up delay-100">
-            <h1 className="font-poppins font-semibold text-[2.2rem] md:text-6xl text-brand-sky tracking-tight drop-shadow-sm">
+            <h1
+              className="font-poppins font-semibold text-[2.2rem] md:text-6xl text-brand-sky tracking-tight drop-shadow-sm"
+              style={{ fontFamily: '"Fredoka", sans-serif' }}
+            >
               Mi Baby Shower
             </h1>
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-1 animate-fade-in-up delay-200 mt-2 md:mt-4">
-            <p className="text-[#44607a] font-sans font-normal text-sm md:text-xl tracking-wide">
+            <p className="text-[#314c66] font-sans font-normal text-[0.98rem] md:text-[1.15rem] tracking-wide">
               Te invitamos a celebrar con nosotros
             </p>
-            <p className="text-[#44607a] font-sans font-normal text-sm md:text-xl tracking-wide">
+            <p className="text-[#314c66] font-sans font-normal text-[0.98rem] md:text-[1.15rem] tracking-wide">
               la llegada de
             </p>
           </div>
 
           <div className="flex items-center justify-center gap-1 mb-2 mt-1 animate-fade-in-up delay-300 md:mt-4">
             <h2
-              className="font-poppins text-[3.1rem] md:text-7xl text-[#ff9200] leading-tight text-center tracking-tight"
+              className="font-poppins font-semibold text-[3.1rem] md:text-7xl text-[#ff9200] leading-tight text-center tracking-tight"
               style={{
-                fontFamily: '"Saiyan-Sans", sans-serif',
+                fontFamily: '"Fredoka", sans-serif',
                 textShadow: "none",
                 WebkitTextStroke: "0px transparent",
               }}
@@ -98,7 +101,7 @@ export default function BabyShowerGoku() {
             </h2>
           </div>
 
-          <p className="text-[#5d7891] mt-2 mb-4 md:mt-6 md:mb-4 text-[1.1rem] md:text-xl font-normal animate-fade-in-up delay-400">
+            <p className="text-[#5d7891] mt-2 mb-4 md:mt-6 md:mb-4 text-[1.1rem] md:text-xl font-semibold animate-fade-in-up delay-400">
             Faltan
           </p>
 
