@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const EVENT_DATE = new Date("April 18, 2026 18:00:00").getTime();
+const EVENT_DATE = Date.now() + 30 * 24 * 60 * 60 * 1000;
 
 export default function PrimerAnitoMoana() {
   useEffect(() => {

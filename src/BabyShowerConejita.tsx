@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const EVENT_DATE = new Date("April 30, 2026 15:00:00").getTime();
+const EVENT_DATE = Date.now() + 30 * 24 * 60 * 60 * 1000;
 
 export default function BabyShowerConejita() {
   useEffect(() => {

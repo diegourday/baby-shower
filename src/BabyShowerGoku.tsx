@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 const EVENT_DATE = Date.now() + 30 * 24 * 60 * 60 * 1000;
 
-export default function BabyShowerPanda() {
+export default function BabyShowerGoku() {
   useEffect(() => {
-    document.title = "Baby Shower - Panda";
+    document.title = "Baby Shower - Goku";
   }, []);
 
   const [timeLeft, setTimeLeft] = useState({
@@ -43,64 +43,66 @@ export default function BabyShowerPanda() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[100vh] w-full overflow-hidden font-sans bg-white">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-50"
-        style={{ backgroundImage: "url('/panda/bg.svg')" }}
-      />
+    <div className="relative flex min-h-[100vh] w-full overflow-hidden bg-[#eef8ff] font-sans">
+      <div className="absolute inset-0 bg-[url('/goku/bg-goku.jpg')] bg-[length:100%_100%] bg-center bg-no-repeat" />
+      <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-sky-200/30 blur-3xl" />
+      <div className="absolute -right-24 bottom-8 h-72 w-72 rounded-full bg-white/45 blur-3xl" />
 
-      {/* Decoración superior izquierda */}
-      <img
-        src="/panda/izq.svg"
-        alt=""
-        className="absolute top-0 left-0 w-28 md:w-48 lg:w-64 pointer-events-none z-0"
-      />
-
-      {/* Decoración inferior derecha */}
-      <img
-        src="/panda/der.svg"
-        alt=""
-        className="absolute bottom-0 right-0 w-28 md:w-48 lg:w-64 pointer-events-none z-0"
-      />
-
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full p-4 md:p-12 text-center gap-4 md:gap-16">
-        {/* Lado Izquierdo: Imagen del Panda */}
-        <div className="relative w-80 h-80 md:w-[500px] md:h-[500px] flex-shrink-0 animate-fade-in-up">
+      <div className="relative z-10 flex min-h-[100vh] w-full flex-col items-center justify-center px-4 py-8 text-center md:px-8 lg:flex-row lg:gap-16 lg:px-12">
+        <div className="relative w-80 h-80 md:w-[520px] md:h-[520px] flex-shrink-0 animate-fade-in-up">
           <img
-            src="/panda/main.png"
-            alt="Panda"
-            className="w-full h-full object-contain"
+            src="/goku/nube.png"
+            alt="Nube flotante"
+            className="absolute bottom-0 left-1/2 z-0 w-full -translate-x-1/2 object-contain drop-shadow-[0_20px_35px_rgba(96,165,250,0.25)]"
+          />
+          <div className="absolute -right-4 top-6 z-20 animate-bounce md:-right-2 md:top-10">
+            <img
+              src="/goku/esfera.png"
+              alt="Esfera del dragón"
+              className="h-24 w-24 object-contain drop-shadow-[0_16px_30px_rgba(255,190,0,0.45)] md:h-32 md:w-32"
+            />
+          </div>
+          <img
+            src="/goku/main-goku.png"
+            alt="Goku"
+            className="relative z-10 w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.22)]"
           />
         </div>
 
-        {/* Lado Derecho: Textos y Contador */}
-        <div className="flex flex-col items-center justify-center w-full md:w-auto">
+        <div className="flex flex-col items-center justify-center w-full lg:w-auto">
           <div className="mb-2 animate-fade-in-up delay-100">
-            <h1 className="font-cursive font-bold text-[2.2rem] md:text-6xl text-brand-pink tracking-wide drop-shadow-sm">
+            <h1 className="font-poppins font-semibold text-[2.2rem] md:text-6xl text-brand-sky tracking-tight drop-shadow-sm">
               Mi Baby Shower
             </h1>
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-1 animate-fade-in-up delay-200 mt-2 md:mt-4">
-            <p className="text-[#696969] font-sans font-normal text-sm md:text-xl tracking-wide">
+            <p className="text-[#44607a] font-sans font-normal text-sm md:text-xl tracking-wide">
               Te invitamos a celebrar con nosotros
             </p>
-            <p className="text-[#696969] font-sans font-normal text-sm md:text-xl tracking-wide">
+            <p className="text-[#44607a] font-sans font-normal text-sm md:text-xl tracking-wide">
               la llegada de
             </p>
           </div>
 
           <div className="flex items-center justify-center gap-1 mb-2 mt-1 animate-fade-in-up delay-300 md:mt-4">
-            <h2 className="font-cursive font-bold text-[3.25rem] md:text-7xl text-brand-pink drop-shadow-sm leading-tight text-center">
-              Maeve Alice
+            <h2
+              className="font-poppins text-[3.1rem] md:text-7xl text-[#ff9200] leading-tight text-center tracking-tight"
+              style={{
+                fontFamily: '"Saiyan-Sans", sans-serif',
+                textShadow: "none",
+                WebkitTextStroke: "0px transparent",
+              }}
+            >
+              Enzo Matheo
             </h2>
           </div>
 
-          <p className="text-[#6d6d6d] mt-2 mb-4 md:mt-6 md:mb-4 text-[1.1rem] md:text-xl font-normal animate-fade-in-up delay-400">
+          <p className="text-[#5d7891] mt-2 mb-4 md:mt-6 md:mb-4 text-[1.1rem] md:text-xl font-normal animate-fade-in-up delay-400">
             Faltan
           </p>
 
-          <div className="bg-[#ef93b4] rounded-xl shadow-[0_4px_14px_rgba(235,119,157,0.3)] flex divide-x divide-white p-2 mb-6 animate-fade-in-up delay-500 w-fit">
+          <div className="bg-brand-sky rounded-xl shadow-[0_4px_18px_rgba(56,150,231,0.32)] flex divide-x divide-white/75 p-2 mb-6 animate-fade-in-up delay-500 w-fit border border-white/70">
             <div className="flex flex-col items-center justify-center w-20 md:w-24 py-1">
               <span className="text-3xl md:text-4xl font-bold text-white tracking-wide">
                 {timeLeft.dias}

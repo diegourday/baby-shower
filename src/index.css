@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Saiyan-Sans";
+  src: url("/goku/Saiyan-Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --color-brand-pink: #eb779d;
   --color-brand-light: #fdf2f8;
   --color-brand-box: #ef98b6;
+  --color-brand-sky: #38a3f8;
+  --color-brand-sky-soft: #dff2ff;
   --font-cursive: "Dancing Script", cursive;
   --font-moana: "Parisienne", cursive;
   --font-sans: "Montserrat", sans-serif;
