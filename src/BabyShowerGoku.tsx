@@ -90,12 +90,8 @@ export default function BabyShowerGoku() {
 
           <div className="flex items-center justify-center gap-1 mb-2 mt-1 animate-fade-in-up delay-300 md:mt-4">
             <h2
-              className="font-poppins font-semibold text-[3.1rem] md:text-7xl text-[#ff9200] leading-tight text-center tracking-tight"
-              style={{
-                fontFamily: '"Fredoka", sans-serif',
-                textShadow: "none",
-                WebkitTextStroke: "0px transparent",
-              }}
+              className="title-soft-outline font-poppins font-semibold text-[3.1rem] md:text-7xl text-[#ff9200] leading-tight text-center tracking-tight"
+              style={{ fontFamily: '"Fredoka", sans-serif' }}
             >
               Enzo Matheo
             </h2>

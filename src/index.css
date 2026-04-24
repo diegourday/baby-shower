@@ -31,3 +31,8 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
+
+.title-soft-outline {
+  -webkit-text-stroke: 2px #ffffff;
+  text-shadow: none;
+}
