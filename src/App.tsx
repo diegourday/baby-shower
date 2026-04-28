@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import BabyShowerConejita from "./BabyShowerConejita";
 import BabyShowerGoku from "./BabyShowerGoku";
 import BabyShowerPanda from "./BabyShowerPanda";
+import BabyShowerOsito from "./BabyShowerOsito";
 import PrimerAnitoMoana from "./PrimerAnitoMoana";
 
 function Home() {
@@ -39,6 +40,13 @@ function Home() {
         </Link>
 
         <Link
+          to="/baby-shower-osito"
+          className="bg-cyan-100 hover:bg-cyan-200 text-cyan-800 font-semibold py-3 px-6 rounded-xl shadow-sm transition-colors duration-300"
+        >
+          Baby Shower Osito
+        </Link>
+
+        <Link
           to="/primer-anito-moana"
           className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold py-3 px-6 rounded-xl shadow-sm transition-colors duration-300"
         >
@@ -57,6 +65,7 @@ function App() {
         <Route path="/baby-shower-conejita" element={<BabyShowerConejita />} />
         <Route path="/baby-shower-goku" element={<BabyShowerGoku />} />
         <Route path="/baby-shower-panda" element={<BabyShowerPanda />} />
+        <Route path="/baby-shower-osito" element={<BabyShowerOsito />} />
         <Route path="/primer-anito-moana" element={<PrimerAnitoMoana />} />
       </Routes>
     </BrowserRouter>

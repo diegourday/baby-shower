@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -49,4 +50,34 @@ body {
 
 .animate-tail-sway {
   animation: tail-sway 2.8s ease-in-out infinite;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 5.5s ease-in-out infinite;
+}
+
+.animate-cloud-drift {
+  animation: cloud-drift 12s ease-in-out infinite;
 }
