@@ -55,6 +55,11 @@ export default function BabyShowerGoku() {
             alt="Nube flotante"
             className="absolute bottom-0 left-1/2 z-0 w-full -translate-x-1/2 object-contain drop-shadow-[0_20px_35px_rgba(96,165,250,0.25)]"
           />
+          <img
+            src="/goku/cola.png"
+            alt="Cola de Goku"
+            className="absolute left-[5%] bottom-[13%] z-10 w-[29%] origin-[78%_58%] object-contain drop-shadow-[0_14px_22px_rgba(75,85,99,0.18)] animate-tail-sway motion-reduce:animate-none md:left-[8%] md:bottom-[15%] md:w-[26%]"
+          />
           <div className="absolute -right-4 top-6 z-20 animate-bounce md:-right-2 md:top-10">
             <img
               src="/goku/esfera.png"
@@ -65,7 +70,7 @@ export default function BabyShowerGoku() {
           <img
             src="/goku/main.png"
             alt="Goku"
-            className="relative z-10 w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.22)]"
+            className="relative z-20 w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.22)]"
           />
         </div>
 

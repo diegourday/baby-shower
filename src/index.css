@@ -36,3 +36,17 @@ body {
   -webkit-text-stroke: 2px #ffffff;
   text-shadow: none;
 }
+
+@keyframes tail-sway {
+  0%,
+  100% {
+    transform: rotate(-9deg) translateY(0) translateX(0);
+  }
+  50% {
+    transform: rotate(3deg) translateY(-2px) translateX(2px);
+  }
+}
+
+.animate-tail-sway {
+  animation: tail-sway 2.8s ease-in-out infinite;
+}
