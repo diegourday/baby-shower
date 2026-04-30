@@ -2,6 +2,37 @@ import { useEffect, useState } from "react";
 
 const EVENT_DATE = Date.now() + 30 * 24 * 60 * 60 * 1000;
 
+const floatingDecorations = [
+  {
+    src: "/osito/babero.svg",
+    alt: "Babero",
+    className:
+      "bottom-2 right-0 w-12 md:bottom-4 md:-right-6 md:w-16 lg:bottom-6 lg:-right-8 lg:w-18",
+    delay: "0s",
+  },
+  {
+    src: "/osito/chupon.svg",
+    alt: "Chupon",
+    className:
+      "right-2 top-2 w-[2.75rem] md:right-0 md:top-4 md:w-[3.5rem] lg:right-2 lg:top-6 lg:w-[3.75rem]",
+    delay: "1.2s",
+  },
+  {
+    src: "/osito/sonaja.svg",
+    alt: "Sonaja",
+    className:
+      "-bottom-1 left-0 w-11 md:-bottom-2 md:left-4 md:w-16 lg:-bottom-4 lg:left-6 lg:w-18",
+    delay: "0.6s",
+  },
+  {
+    src: "/osito/globo.svg",
+    alt: "Globo",
+    className:
+      "-left-2 top-2 w-[3.25rem] md:left-2 md:top-0 md:w-[4.25rem] lg:left-4 lg:-top-2 lg:w-[4.5rem]",
+    delay: "1.8s",
+  },
+];
+
 export default function BabyShowerOsito() {
   useEffect(() => {
     document.title = "Baby Shower - Osito";
@@ -53,11 +84,24 @@ export default function BabyShowerOsito() {
       <div className="absolute -right-24 bottom-8 h-72 w-72 rounded-full bg-white/35 blur-3xl" />
 
       <div className="relative z-10 flex min-h-[100vh] w-full flex-col items-center justify-center px-4 py-8 text-center md:px-8 lg:flex-row lg:gap-16 lg:px-12">
-        <div className="relative w-80 h-80 md:w-[520px] md:h-[520px] flex-shrink-0 animate-fade-in-up">
+        <div className="relative w-80 h-80 md:w-[520px] md:h-[520px] flex-shrink-0 overflow-visible animate-fade-in-up">
+          <div className="absolute inset-0 z-20 pointer-events-none">
+            {floatingDecorations.map((item) => (
+              <img
+                key={item.alt}
+                src={item.src}
+                alt={item.alt}
+                aria-hidden="true"
+                className={`absolute object-contain drop-shadow-[0_10px_20px_rgba(59,130,246,0.16)] animate-soft-orbit ${item.className}`}
+                style={{ animationDelay: item.delay }}
+              />
+            ))}
+          </div>
+
           <img
             src="/osito/main.svg"
             alt="Osito"
-            className="w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.18)]"
+            className="relative z-10 w-full h-full object-contain drop-shadow-[0_18px_35px_rgba(59,130,246,0.18)]"
           />
         </div>
 
