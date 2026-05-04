@@ -4,6 +4,7 @@ import BabyShowerConejita from "./BabyShowerConejita";
 import BabyShowerGoku from "./BabyShowerGoku";
 import BabyShowerPanda from "./BabyShowerPanda";
 import BabyShowerOsito from "./BabyShowerOsito";
+import BabyShowerOsita from "./BabyShowerOsita";
 import PrimerAnitoMoana from "./PrimerAnitoMoana";
 
 function Home() {
@@ -78,6 +79,16 @@ function Home() {
             </span>
             Baby Shower Osito
           </Link>
+
+          <Link
+            to="/baby-shower-osita"
+            className="flex items-center gap-3 bg-pink-100 hover:bg-pink-200 text-pink-800 font-semibold py-3 px-6 rounded-xl shadow-sm transition-colors duration-300"
+          >
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-sm font-bold text-pink-700 shadow-sm">
+              6
+            </span>
+            Baby Shower Osita
+          </Link>
         </div>
       </div>
     </div>
@@ -94,6 +105,7 @@ function App() {
         <Route path="/primer-anito-moana" element={<PrimerAnitoMoana />} />
         <Route path="/baby-shower-goku" element={<BabyShowerGoku />} />
         <Route path="/baby-shower-osito" element={<BabyShowerOsito />} />
+        <Route path="/baby-shower-osita" element={<BabyShowerOsita />} />
       </Routes>
     </BrowserRouter>
   );
