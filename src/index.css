@@ -102,3 +102,80 @@ body {
   animation: soft-orbit 6.5s ease-in-out infinite;
   will-change: transform;
 }
+
+@keyframes cloud-sway-left {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-12px) translateY(-2px);
+  }
+}
+
+@keyframes cloud-sway-right {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(12px) translateY(2px);
+  }
+}
+
+@keyframes heart-pulse-soft {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes baby-rock {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+.animate-cloud-sway-left {
+  animation: cloud-sway-left 5.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-cloud-sway-right {
+  animation: cloud-sway-right 6.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-heart-pulse-soft {
+  animation: heart-pulse-soft 4.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-baby-rock {
+  animation: baby-rock 5.2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes baby-rock-centered {
+  0%,
+  100% {
+    transform: translateY(-50%) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(4deg);
+  }
+}
+
+.animate-baby-rock-centered {
+  animation: baby-rock-centered 5.2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}

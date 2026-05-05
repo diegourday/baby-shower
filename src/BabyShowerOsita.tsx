@@ -8,30 +8,35 @@ const floatingDecorations = [
     alt: "Corazones",
     className:
       "left-2 top-24 w-16 md:left-4 md:top-28 md:w-20 lg:left-6 lg:top-40 lg:w-24",
+    motionClass: "animate-heart-pulse-soft",
   },
   {
     src: "/osita/nube-1.svg",
     alt: "Nube 1",
     className:
       "right-3 top-2 w-16 md:right-4 md:top-4 md:w-24 lg:right-6 lg:top-6 lg:w-28",
+    motionClass: "animate-cloud-sway-left",
   },
   {
     src: "/osita/nube-2.svg",
     alt: "Nube 2",
     className:
       "-right-14 top-16 w-18 md:-right-16 md:top-20 md:w-28 lg:-right-18 lg:top-24 lg:w-32",
+    motionClass: "animate-cloud-sway-right",
   },
   {
     src: "/osita/biberon.svg",
     alt: "Biberon",
     className:
-      "left-5 bottom-4 w-12 md:left-7 md:bottom-6 md:w-16 lg:left-10 lg:bottom-10 lg:w-20",
+      "left-6 bottom-4 w-12 md:left-7 md:bottom-6 md:w-16 lg:left-10 lg:bottom-10 lg:w-20",
+    motionClass: "animate-baby-rock",
   },
   {
     src: "/osita/chupon.svg",
     alt: "Chupon",
     className:
-      "right-0 top-1/2 w-12 -translate-y-1/2 md:right-2 md:w-16 lg:right-4 lg:w-18",
+      "-right-2 top-[54%] w-12 -translate-y-1/2 md:right-0 md:top-[56%] md:w-16 lg:right-2 lg:top-[57%] lg:w-18",
+    motionClass: "animate-baby-rock-centered",
   },
 ];
 
@@ -95,7 +100,7 @@ export default function BabyShowerOsita() {
                 src={item.src}
                 alt={item.alt}
                 aria-hidden="true"
-                className={`absolute object-contain drop-shadow-[0_10px_20px_rgba(236,72,153,0.18)] ${item.className}`}
+                className={`absolute object-contain drop-shadow-[0_10px_20px_rgba(236,72,153,0.18)] ${item.motionClass} ${item.className}`}
               />
             ))}
           </div>
