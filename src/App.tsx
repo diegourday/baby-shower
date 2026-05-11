@@ -5,6 +5,7 @@ import BabyShowerGoku from "./BabyShowerGoku";
 import BabyShowerPanda from "./BabyShowerPanda";
 import BabyShowerOsito from "./BabyShowerOsito";
 import BabyShowerOsita from "./BabyShowerOsita";
+import MatrimonioUno from "./MatrimonioUno";
 import PrimerAnitoMoana from "./PrimerAnitoMoana";
 
 function Home() {
@@ -89,6 +90,16 @@ function Home() {
             </span>
             Baby Shower Osita
           </Link>
+
+          <Link
+            to="/matrimonio-uno"
+            className="flex items-center gap-3 bg-amber-100 hover:bg-amber-200 text-amber-900 font-semibold py-3 px-6 rounded-xl shadow-sm transition-colors duration-300"
+          >
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-sm font-bold text-amber-700 shadow-sm">
+              7
+            </span>
+            Matrimonio Uno
+          </Link>
         </div>
       </div>
     </div>
@@ -106,6 +117,7 @@ function App() {
         <Route path="/baby-shower-goku" element={<BabyShowerGoku />} />
         <Route path="/baby-shower-osito" element={<BabyShowerOsito />} />
         <Route path="/baby-shower-osita" element={<BabyShowerOsita />} />
+        <Route path="/matrimonio-uno" element={<MatrimonioUno />} />
       </Routes>
     </BrowserRouter>
   );

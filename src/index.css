@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Nunito:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -20,6 +20,8 @@
   --font-poppins: "Poppins", sans-serif;
   --font-fredoka: "Fredoka", sans-serif;
   --font-oleo: "Oleo Script", cursive;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-great-vibes: "Great Vibes", cursive;
 }
 
 body {
