@@ -57,28 +57,28 @@ export default function MatrimonioUno() {
         src="/matrimonio-uno/flores-izq.svg"
         alt="Flores izquierda"
         aria-hidden="true"
-        className="pointer-events-none absolute left-[-0.2rem] top-[32%] z-0 w-24 -translate-y-1/2 sm:w-28 md:left-0 md:top-1/2 md:w-40 lg:w-60"
+        className="pointer-events-none absolute left-[-0.2rem] top-[45%] z-0 w-24 -translate-y-1/2 sm:w-28 md:left-0 md:top-1/2 md:w-40 lg:w-60"
       />
       <img
         src="/matrimonio-uno/flores-der-arriba.svg"
         alt="Flores derecha superior"
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-0.2rem] top-0 z-0 w-40 sm:w-44 md:right-0 md:w-64 lg:w-80"
+        className="pointer-events-none absolute right-[-0.2rem] top-0 z-0 w-55 md:right-0 md:w-64 lg:w-90"
       />
       <img
         src="/matrimonio-uno/flores-der-abajo.svg"
         alt="Flores derecha inferior"
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 right-[-0.2rem] z-0 w-28 sm:w-32 md:right-0 md:w-44 lg:w-60"
+        className="pointer-events-none absolute bottom-0 right-[-0.2rem] z-0 w-36 sm:w-40 md:right-0 md:w-55 lg:w-80"
       />
       <div className="absolute left-[-5rem] top-10 h-72 w-72 rounded-full bg-white/35 blur-3xl" />
       <div className="absolute bottom-[-6rem] right-[-4rem] h-80 w-80 rounded-full bg-[#84a494]/10 blur-3xl" />
       <div className="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(rgba(120,150,140,0.35)_1px,transparent_1px)] [background-size:18px_18px]" />
 
       <div className="relative z-10 flex min-h-[100vh] w-full flex-col items-center justify-center gap-8 px-4 py-8 text-center lg:flex-row lg:gap-16 lg:px-10">
-        <div className="relative flex h-80 w-80 flex-shrink-0 items-center justify-center md:h-[520px] md:w-[520px] animate-fade-in-up lg:translate-x-20 xl:translate-x-28">
+        <div className="relative flex h-70 w-70 flex-shrink-0 items-center justify-center md:h-[420px] md:w-[420px] animate-fade-in-up lg:translate-x-20 xl:translate-x-28">
           <img
-            src="/matrimonio-uno/main.svg"
+            src="/matrimonio-uno/main.png"
             alt="Gabriel y Dana"
             className="h-full w-full object-contain"
           />
